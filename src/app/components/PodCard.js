@@ -1,9 +1,10 @@
+'use client'
 import { AspectRatio } from "@radix-ui/react-aspect-ratio"
 import Image from "next/image"
 const PodCard = ({title,imgsrc}) => {
     return (
         <div className="flex flex-col w-96   gap-4 p-6 rounded-lg justify-between  border-2 transition border-slate-200 shadow  hover:border-slate-300">
-            <div className="img">
+            <div  className="image  transition duration-700">
                 <AspectRatio ratio={4/3}>
                     < Image placeholder="blur" blurDataURL="/ep1.jpg" width={600} height={600} className="flex rounded-md outline-none h-60 w-full object-cover" src="/ep1.jpg" alt=""/>
 

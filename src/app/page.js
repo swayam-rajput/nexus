@@ -4,8 +4,30 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import PodCard from "./components/PodCard";
 import Link from "next/link";
+import blurImage from "./helpers/helper";
+import { useEffect } from "react";
 export default function Home() {
-    
+    useEffect(() => {
+        document.getElementById('symbol').classList.add('blur-sm')
+        
+        const blurImage = (clsName='.image',state = false) => {
+            const images = document.querySelectorAll(clsName); // Ensure it exists
+            images.forEach(img => {
+                console.log(img.classList);
+                if (img) {
+                    if (state) {
+                    img.classList.add("blur-sm");
+                    } else {
+                    img.classList.remove("blur-sm");
+                    }
+                }
+            });
+        };
+        const timeout = setTimeout(() => blurImage('.image',false), 250);
+
+        return () => clearTimeout(timeout); // Cleanup on unmount
+    }, []);
+
     return (
         <div className="flex flex-col pb-8 gap-16 font-[family-name:var(--font-geist-sans)]">
             <Navbar/>
@@ -28,8 +50,8 @@ export default function Home() {
                         
                     </div>
                     <div>
-                        <div className="sm:scale-90 rounded-lg">
-                            <Image className="rounded-lg drop-shadow-md" width={800} height={600} src="/ep1.jpg" alt="Nexus Table" loading="lazy"/>
+                        <div id="symbol" className="sm:scale-90 image blur-sm transition duration-200 rounded-lg">
+                            <Image className="rounded-lg  drop-shadow-md" width={800} height={600} src="/ep1.jpg" alt="Nexus Table" loading="lazy"/>
                         </div>
                     </div>
 
@@ -49,7 +71,7 @@ export default function Home() {
                         </Link > 
                     </div>
                     <div className="sm:grid sm:grid-cols-3 flex flex-wrap mx-8  gap-8 flex-row">
-                        <PodCard/>
+                        <PodCard />
                         <PodCard/>
                     </div>
                 </div>
