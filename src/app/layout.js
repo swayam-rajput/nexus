@@ -1,6 +1,4 @@
-
 import "./globals.css";
-
 
 export const metadata = {
   title: "The Nexus Table",
@@ -8,22 +6,26 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
+    
+    return (
     <html lang="en">
       <head>
         <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet"></link>
         <link href="https://api.fontshare.com/v2/css?f[]=archivo@300,400,500&display=swap" rel="stylesheet"></link>
+        
+        
       </head>
       <body
         
         className={` antialiased  flex h-screen  flex-col justify-items-center pb-8 `}
-      >
+        >
         <div className="fixed -z-20 backdrop-blur  w-full h-dvh flex justify-center items-center ">
           <div className="gradient backdrop-blur -z-10 w-full h-full p-20"></div>
         </div>
-        {children}
         
+        {children}
       </body>
+      
     </html>
   );
 }

@@ -4,9 +4,10 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import PodCard from "./components/PodCard";
 import Link from "next/link";
-import blurImage from "./helpers/helper";
 import { useEffect } from "react";
+import Timeline from "./components/Timeline";
 export default function Home() {
+    
     useEffect(() => {
         document.getElementById('symbol').classList.add('blur-sm')
         
@@ -29,11 +30,11 @@ export default function Home() {
     }, []);
 
     return (
-        <div className="flex flex-col pb-8 gap-16 font-[family-name:var(--font-geist-sans)]">
+        <div className="flex flex-col pb-16 gap-16 font-[family-name:var(--font-geist-sans)]">
             <Navbar/>
-            <main className="flex flex-col  gap-16 mx-32 ">
+            <main className="flex flex-col gap-16 sm:mx-32 mb-8  ">
                 
-                <div className="flex sm:flex-row flex-col sm:mx-8 gap-6 justify-between">
+                <div className="flex sm:flex-row flex-col sm:mx-8 mx-6 gap-6 justify-between">
                     {/* div for welcoming the user to the home page */}
                     <div className="flex font-archivo flex-col justify-center sm:items-start items-center gap-8 w-fit ">
                         <div className="font-normal opacity-80 text-3xl">
@@ -50,11 +51,10 @@ export default function Home() {
                         
                     </div>
                     <div>
-                        <div id="symbol" className="sm:scale-90 image blur-sm transition duration-200 rounded-lg">
-                            <Image className="rounded-lg  drop-shadow-md" width={800} height={600} src="/ep1.jpg" alt="Nexus Table" loading="lazy"/>
+                        <div id="symbol" className="sm:scale-90 scale-50 image blur-sm transition duration-200 rounded-lg">
+                            <Image className="rounded-lg drop-shadow-md"  width={300} height={100} src="/mic1.png" alt="Nexus Table" loading="lazy"/>
                         </div>
                     </div>
-
                 </div>
 
                 <div className="flex flex-col gap-6 w-full ">
@@ -72,11 +72,14 @@ export default function Home() {
                     </div>
                     <div className="sm:grid sm:grid-cols-3 flex flex-wrap mx-8  gap-8 flex-row">
                         <PodCard />
-                        <PodCard/>
+                        
                     </div>
                 </div>
+                {/* <Timeline/> */}
+
                 
             </main>
+        
         </div>
     );
 }
