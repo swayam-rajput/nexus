@@ -1,0 +1,128 @@
+{
+    
+    "Hosts": {
+        "members": [
+            {
+                "name": "Pranav Patil",
+                "role": "Host"
+            },
+            {
+                "name": "Abhishek Kumavat",
+                "role": "Host"
+            },
+            {
+                "name": "Alice Chauhan",
+                "role": "Host"
+            }
+        ]
+    },
+    "Editors": {
+        "members": [
+            {
+                "name": "Mayur",
+                "role": "Editor"
+            },
+            {
+                "name": "Jayant Iyer",
+                "role": "Editor"
+            }
+        ]
+    },
+    "Graphic Designers": {
+        "members": [
+            {
+                "name": "Atharva",
+                "role": "Graphic Designer"
+            },
+            {
+                "name": "Mansi",
+                "role": "Graphic Designer"
+            }
+        ]
+    },
+    "PR Team": {
+        "members": [
+            {
+                "name": "Anup",
+                "role": "PR Lead"
+            },
+            {
+                "name": "Janhvi",
+                "role": "PR"
+            },
+            {
+                "name": "Varad",
+                "role": "PR"
+            },
+      
+            {
+                "name": "Sujal",
+                "role": "PR"
+            }
+        ]
+    },
+    "Management": {
+        "members": [
+            {
+                "name": "Bharat Purohit",
+                "role": "Management"
+            },
+            {
+                "name": "Sujal",
+                "role": "Management"
+            }
+        ]
+    },
+    "Social Media Team": {
+        "members": [
+            {
+                "name": "Praneel",
+                "role": "Social Media"
+            },
+            {
+                "name": "Kartiki",
+                "role": "Social Media"
+            }
+        ]
+    },
+    "Tech": {
+        "members": [
+            {
+                "name": "Swayam Rajput",
+                "role": "Tech Lead"
+            },
+            {
+                "name": "Anushka Bhagat",
+                "role": "Tech"
+            },
+            {
+                "name": "Manaswi Dusane",
+                "role": "Tech"
+            }
+        ]
+    },
+    "Video Editing": {
+        "members": [
+            {
+                "name": "Naitik",
+                "role": "Video Editor"
+            }
+        ]
+    },
+    "Videography": {
+        "members": [
+            {
+                "name": "Arjun Chavanke",
+                "role": "Videographer"
+            },
+            {
+                "name": "Pranav Gaikwad",
+                "role": "Videographer"
+            },
+            {
+                "name": "Harshadsai",
+                "role": "Videographer"
+            }
+        ]
+    }
+}

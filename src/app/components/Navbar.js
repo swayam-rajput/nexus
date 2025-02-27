@@ -27,14 +27,18 @@ const Navbar = () => {
                     {/* The Nexus Table */}
                 </div>
                 <div className="flex uppercase  sm:text-sm text-xs items-center  flex-row gap-6">
-                    <div className=" py-1 transition border-black border-b border-opacity-0 hover:border-opacity-100  cursor-pointer">
-                        <Link href="/episodes" >
-                            Episodes
-                        </Link>
-                    </div>
+                    <Link href="/episodes" >
+                        <div className=" py-1 transition border-black border-b border-opacity-0 hover:border-opacity-100  cursor-pointer">
+                                Episodes
+                        </div>
+                    </Link>
                     <div className=" py-1 transition border-black border-b border-opacity-0 hover:border-opacity-100  cursor-pointer">
                         Contact</div>
-                    <div className=" py-1 transition border-black border-b border-opacity-0 hover:border-opacity-100  cursor-pointer">Team</div>
+                    <Link href="/team">
+                        <div className=" py-1 transition border-black border-b border-opacity-0 hover:border-opacity-100  cursor-pointer">
+                                Team
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>

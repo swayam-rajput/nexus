@@ -71,7 +71,7 @@ export default function HeroVideoDialog({
           height={100}
           className="object-contain rounded-md border shadow-lg transition-all duration-200 ease-out group-hover:brightness-[0.8]" />
         <div
-          className="absolute  inset-0 flex scale-[0.9] items-center justify-center rounded-2xl transition-all duration-200 ease-out group-hover:scale-100">
+          className="absolute inset-0 flex scale-[0.9] items-center justify-center rounded-2xl transition-all duration-200 ease-out group-hover:scale-100">
           <div
             className="flex size-24 items-center justify-center rounded-full bg-primary/10 backdrop-blur-md">
             <div
@@ -93,7 +93,7 @@ export default function HeroVideoDialog({
             animate={{ opacity: 1 }}
             onClick={() => setIsVideoOpen(false)}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md">
+            className="fixed h-screen inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-md">
             <motion.div
               {...selectedAnimation}
               transition={{ type: "spring", damping: 30, stiffness: 300 }}

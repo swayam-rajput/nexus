@@ -22,8 +22,8 @@ export default function RootLayout({ children }) {
         <div className="fixed -z-20 backdrop-blur  w-full h-dvh flex justify-center items-center ">
           <div className="gradient backdrop-blur -z-10 w-full h-full p-20"></div>
         </div>
-        
         {children}
+        
       </body>
       
     </html>

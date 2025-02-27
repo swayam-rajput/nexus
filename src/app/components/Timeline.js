@@ -1,6 +1,5 @@
 import { HoverCard, HoverCardTrigger, HoverCardContent } from "@/components/ui/hover-card";
 import Image from "next/image";
-import { HeroVideoDialogDemo } from "./HeroVideoDialog";
 
 const episodes = [
   { image: "/ep1.jpg", title: "Episode 1", description: "This is episode 1." },

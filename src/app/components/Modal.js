@@ -4,7 +4,7 @@
 // import { Label } from "@/components/ui/label"
 import Image from "next/image";
 import { HeroVideoDialogDemo } from "./HeroVideoDialog";
-const Modal = ({showModal})=> {
+const Modal = ({showModal,children})=> {
     console.log(showModal);
     if (!showModal){
         return (<></>)
@@ -12,6 +12,7 @@ const Modal = ({showModal})=> {
     return (
         <div className="flex text-black opacity-100 flex-col ">
             <div className="gap-4 flex flex-col">
+                {children}
                 <div className="flex flex-col gap-4 justify-between">
                     {/* <div className="rounded-lg flex items-start     ">
                         <Image className="rounded-lg object-contain" width={400} height={600} src={'/ep1.jpg'} alt="ep1" ></Image>
